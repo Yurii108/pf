@@ -1,4 +1,4 @@
-.humburger {
+.hamburger {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -24,17 +24,22 @@
 .menu {
     position: fixed;
     top: 0;
-    //left: -100%;
+    left: -100%;
     width: 100%;
     height: 100vh;
-    //visibility: hidden;
-    //opacity: 0;
+    visibility: hidden;
+    opacity: 0;
     z-index: 10;
     transition: all .6s;
 
+    &.active {
+        left: 0;
+        visibility: visible;
+        opacity: 100;
+    }
+
     &__block {
         position: relative;
-        //left: -100%; 
         width: 345px;
         background: $main_colors;
         height: 100%;
