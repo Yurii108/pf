@@ -3,27 +3,33 @@
     font-size: 36px;
     line-height: 60px;
 
-    &_fz-14 {
+    &_fs-14 {
         font-weight: 700;
         font-size: 14px;
         line-height: 21px;
     }
 
-    &_fz-16 {
+    &_fs-16 {
         z-index: 1;
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
 
-        &.c {
+        &.colors {
             color: $promo_colors;
         }
     }
 
-    &_fz-48 {
+    &_fs-20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &_fs-48 {
         font-size: 48px;
         color: $promo_colors;
     }
 
+    
 
 }
