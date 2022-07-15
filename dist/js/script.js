@@ -9,3 +9,11 @@ hamburger.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => {
         menu.classList.remove('active');
 });
+
+//skills-procent
+const procent = document.querySelectorAll('.skills__procent-procent'),
+        rectaingle = document.querySelectorAll('.skills__procent_rectangle span');
+
+procent.forEach( (item, i) => {
+        rectaingle[i].style.width = item.innerHTML;
+});
