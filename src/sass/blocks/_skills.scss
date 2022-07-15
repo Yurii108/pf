@@ -36,8 +36,8 @@
         border: 1px solid #000000;
 
         img {
-        min-height: 65px;
-        max-width: 160px;
+            min-height: 65px;
+            max-width: 160px;
         }
 
 
@@ -52,5 +52,59 @@
             line-height: 18px;
         }
     }
+
+    &__procent {
+        margin-top: 120px;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        gap: 30px 45px;
+
+        &-item {
+            position: relative;
+            width: 350px;
+            height: 70px;
+            // border: 1px solid #000000;
+
+        }
+
+        &-title {
+            position: absolute;
+            left: 13px;
+            top: 8px;
+            @include before_circle;
+
+            &:before {
+                top: -8px;
+                left: -13px;
+            }
+        }
+
+        &-procent {
+            position: absolute;
+            right: 0;
+            top: 11px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        &_rectangle {
+            position: absolute;
+            width: 350px;
+            height: 14px;
+            background: #d2cec8;
+            border-radius: 4px;
+            bottom: 0;
+
+            &-full {
+                height: 14px;
+                background: $main_colors;
+                border-radius: 4px;
+            }
+        }
+    }
+
+
+
 
 }
