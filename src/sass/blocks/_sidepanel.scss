@@ -10,6 +10,12 @@
     left: 50px;
     color: $main_colors;
 
+
+    path {
+        fill: $main_colors;
+    }
+
+
     &__divider {
         height: 70px;
         width: 2px;
