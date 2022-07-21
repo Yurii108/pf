@@ -3,7 +3,7 @@
 
     &__wrapper {
         margin: 54px auto 0 auto;
-        width: 1140px;
+        width: fit-content;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -39,6 +39,7 @@
 
     &__procent {
         margin-top: 120px;
+        width: fit-content;
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(3, 1fr);
         gap: 30px 45px;

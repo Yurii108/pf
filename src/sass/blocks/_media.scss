@@ -5,6 +5,13 @@
 //     }
 // }
 
+@media (max-width: 1300px) {
+
+    .sidepanel {
+        display: none;
+    }
+}
+
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
@@ -36,6 +43,17 @@
         &__wrapper {
             column-gap: 60px;
             padding: 60px 10px 0 10px;
+        }
+    }
+
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__procent {
+            margin: 120px;
+            grid-template: repeat(3, 1fr) / repeat(2, 1fr);
         }
     }
 }
@@ -87,6 +105,27 @@
             font-size: 12px;
         }
     }
+
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__procent {
+            padding-top: 60px;
+            margin: 0 auto;
+            grid-template-columns: 1fr 1fr;
+
+            &_rectangle {
+                width: 300px;
+            }
+
+            &-item {
+                width: 300px;
+            }
+        }
+    }
+
 }
 
 
@@ -115,20 +154,14 @@
 
         &__wrapper {
             grid-template: 400px auto auto / 1fr;
-            // display: flex;
-            // flex-direction: column;
         }
 
         &__photo {
             grid-row: unset;
-            // height: 400px;
         }
 
         &__about-me {
             margin-top: 20px;
-            // width: 300px;
-            // grid-row: 2 / 3;
-
         }
 
         &__skills {
@@ -139,8 +172,17 @@
                 column-gap: 20px;
             }
         }
+    }
 
+    .skills {
+        &__item {
+            width: 260px;
+            height: 260px;
+        }
 
+        &__procent {
+            grid-template-columns: 1fr;
+        }
     }
 }
 
@@ -194,9 +236,33 @@
     }
 
     .resume {
+        margin-top: 20px;
+
         &__wrapper {
             grid-template-columns: repeat(1, 300px);
             row-gap: 40px;
+        }
+    }
+
+    .skills {
+        margin-top: 20px;
+
+        .title__section-subtitle {
+            margin-top: 20px;
+            line-height: 36px;
+        }
+
+        .divider {
+            margin-top: 15px;
+        }
+
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        &__procent {
+            grid-template-columns: 1fr;
+            padding-top: 40px;
         }
     }
 }
