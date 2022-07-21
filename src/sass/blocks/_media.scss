@@ -7,7 +7,7 @@
 
 @media (max-width: 1200px) {
     .container {
-        min-width: 960px;
+        max-width: 960px;
     }
 
     .sidepanel {
@@ -19,10 +19,6 @@
         &__wrapper {
             grid-template-columns: 400px 520px;
             column-gap: 25px;
-        }
-
-        &__photo {
-            margin-left: 15px;
         }
 
         &__skills {
@@ -39,14 +35,45 @@
 
 @media (max-width: 992px) {
     .container {
-        min-width: 720px;
+        max-width: 720px;
     }
 
+    .title {
+        &_fs-36 {
+            font-size: 30px;
+        }
+    }
+
+    .myself {
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+            row-gap: 10px;
+        }
+
+        &__skills {
+            grid-template-columns: 380px;
+            grid-auto-rows: minmax(105px, auto);
+            row-gap: 5px;
+
+            &_item {
+                grid-template-columns: 40px 320px;
+                column-gap: 20px;
+            }
+
+            &_descr {
+                font-size: 12px;
+            }
+        }
+
+        &__descr {
+            font-size: 13px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
     .container {
-        min-width: 540px;
+        max-width: 540px;
     }
 
     .title {
@@ -61,6 +88,39 @@
             width: 300px;
         }
     }
+
+    .myself {
+        margin-top: 40px;
+
+        &__wrapper {
+            grid-template: 400px auto auto / 1fr;
+            // display: flex;
+            // flex-direction: column;
+        }
+
+        &__photo {
+            grid-row: unset;
+            // height: 400px;
+        }
+
+        &__about-me {
+            margin-top: 20px;
+            // width: 300px;
+            // grid-row: 2 / 3;
+
+        }
+
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+
+            &_item {
+                grid-template-columns: 40px 200px;
+                column-gap: 20px;
+            }
+        }
+
+
+    }
 }
 
 @media (max-width: 576px) {
@@ -72,6 +132,9 @@
     .title {
         &_fs-48 {
             font-size: 26px;
+        }
+        &_fs-36 {
+            font-size: 24px;
         }
     }
 
@@ -94,6 +157,17 @@
 
         &__btns {
             margin-top: 30px;
+        }
+    }
+
+    .myself {
+
+        &__wrapper {
+            grid-template: 340px auto auto / 1fr;
+        }
+
+        &__skills {
+            grid-template-columns: 1fr;
         }
     }
 }
