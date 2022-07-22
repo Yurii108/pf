@@ -74,6 +74,20 @@
             }
         }
     }
+
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 400px 450px;
+        }
+
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 220px);
+        }
+
+        &__triggers {
+        column-gap: 20px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -205,6 +219,7 @@
 
     .price {
         margin-top: 40px;
+
         &__wrapper {
             justify-content: center;
             margin-top: 25px;
