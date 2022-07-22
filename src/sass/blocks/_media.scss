@@ -1,5 +1,4 @@
 // @media (max-width: 1439px) {
-
 //     .sidepanel {
 //         display: none;
 //     }
@@ -48,12 +47,31 @@
 
     .skills {
         &__wrapper {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-around;
         }
 
         &__procent {
-            margin: 120px;
-            grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, 350px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: space-around;
+            padding: 0 30px;
+
+        }
+    }
+
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            row-gap: 35px;
+
+            .horizontal,
+            .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
         }
     }
 }
@@ -107,14 +125,10 @@
     }
 
     .skills {
-        &__wrapper {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
         &__procent {
-            padding-top: 60px;
-            margin: 0 auto;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, 300px);
+            // gap: 5px 5px;
+            margin-top: 60px;
 
             &_rectangle {
                 width: 300px;
@@ -123,6 +137,14 @@
             &-item {
                 width: 300px;
             }
+        }
+    }
+
+    .price {
+        &__wrapper {
+            margin-top: 60px;
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, 350px);
         }
     }
 
@@ -179,9 +201,13 @@
             width: 260px;
             height: 260px;
         }
+    }
 
-        &__procent {
-            grid-template-columns: 1fr;
+    .price {
+        margin-top: 40px;
+        &__wrapper {
+            justify-content: center;
+            margin-top: 25px;
         }
     }
 }
@@ -225,6 +251,9 @@
     }
 
     .myself {
+        &__wrapper {
+            margin-top: 20px;
+        }
 
         &__wrapper {
             grid-template: 340px auto auto / 1fr;
@@ -241,11 +270,16 @@
         &__wrapper {
             grid-template-columns: repeat(1, 300px);
             row-gap: 40px;
+            margin-top: 0;
         }
     }
 
     .skills {
         margin-top: 20px;
+
+        &__wrapper {
+            margin-top: 20px;
+        }
 
         .title__section-subtitle {
             margin-top: 20px;
@@ -253,16 +287,29 @@
         }
 
         .divider {
-            margin-top: 15px;
-        }
-
-        &__wrapper {
-            grid-template-columns: 1fr;
+            margin-top: 5px;
         }
 
         &__procent {
-            grid-template-columns: 1fr;
-            padding-top: 40px;
+            padding-top: 0;
+        }
+    }
+
+    .portfolio {
+        margin-top: 60px;
+
+        &__wrapper {
+            margin-top: 20px;
+        }
+
+        .divider {
+            margin-top: 5px;
+        }
+    }
+
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 295px);
         }
     }
 }
