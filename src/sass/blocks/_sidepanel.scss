@@ -8,18 +8,18 @@
     z-index: 3;
     top: 225px;
     left: 50px;
-    color: $main_colors;
+    color: #000;
 
 
     path {
-        fill: $main_colors;
+        fill: #000;
     }
 
 
     &__divider {
         height: 70px;
         width: 2px;
-        background: $main_colors;
+        background: #000;
     }
 
     &__text {
