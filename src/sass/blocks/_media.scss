@@ -16,6 +16,16 @@
         max-width: 960px;
     }
 
+    .promo__title {
+        width: 500px;
+    }
+
+    .title {
+        &_fs-48 {
+            font-size: 38px;
+        }
+    }
+
     .sidepanel {
         display: none;
     }
@@ -99,6 +109,10 @@
         &_fs-36 {
             font-size: 30px;
         }
+    }
+
+    .promo__title {
+        width: 400px;
     }
 
     .myself {
@@ -270,7 +284,7 @@
     }
 
     .promo {
-        background: url('../img/main_bg.jpg') no-repeat 57%/cover;
+        background: url('../img/main_bg.png') no-repeat 46%/cover;
 
         &__btns {
             margin-top: 30px;
